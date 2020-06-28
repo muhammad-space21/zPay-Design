@@ -24,6 +24,11 @@ body {
     height: 30vh;
   }
 }
+@media screen and (max-width: 550px) {
+  .header {
+    height: 50vh;
+  }
+}
 .header .transparent {
   width: 100%;
   height: 100%;
@@ -53,17 +58,19 @@ body {
     font-size: 30px;
   }
 }
-@media screen and (max-width: 550px) {
-  .header .heading-title {
-    font-size: 25px;
-  }
-}
 .header .header-content {
   width: fit-content;
   height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media screen and (max-width: 550px) {
+  .header .header-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .header .account-container {
   width: fit-content;
@@ -91,11 +98,6 @@ body {
   .header .account-container span {
     font-size: 18px;
     margin-bottom: 10px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .header .account-container span {
-    font-size: 14px;
   }
 }
 .header .account-container .account {
@@ -127,11 +129,6 @@ body {
     font-size: 17px;
   }
 }
-@media screen and (max-width: 550px) {
-  .header .account-container .account h1 {
-    font-size: 13px;
-  }
-}
 .header .account-container .account img {
   width: 40px;
   height: 40px;
@@ -154,14 +151,6 @@ body {
     margin-left: 15px;
   }
 }
-@media screen and (max-width: 550px) {
-  .header .account-container .account img {
-    width: 20px;
-    height: 20px;
-    margin-right: 7px;
-    margin-left: 10px;
-  }
-}
 @media screen and (max-width: 991px) {
   .header .account-container .account {
     width: 250px;
@@ -178,10 +167,8 @@ body {
 }
 @media screen and (max-width: 550px) {
   .header .account-container .account {
-    width: 150px;
-    height: 40px;
-    border-radius: 5px;
-    margin-right: 7px;
+    width: 250px;
+    margin-right: 0;
   }
 }
 .header .account-container .account2 {
@@ -213,11 +200,6 @@ body {
     font-size: 17px;
   }
 }
-@media screen and (max-width: 550px) {
-  .header .account-container .account2 h1 {
-    font-size: 13px;
-  }
-}
 .header .account-container .account2 img {
   width: 40px;
   height: 40px;
@@ -240,14 +222,6 @@ body {
     margin-left: 15px;
   }
 }
-@media screen and (max-width: 550px) {
-  .header .account-container .account2 img {
-    width: 20px;
-    height: 20px;
-    margin-right: 7px;
-    margin-left: 10px;
-  }
-}
 @media screen and (max-width: 991px) {
   .header .account-container .account2 {
     width: 250px;
@@ -264,10 +238,8 @@ body {
 }
 @media screen and (max-width: 550px) {
   .header .account-container .account2 {
-    width: 150px;
-    height: 40px;
-    border-radius: 5px;
-    margin-left: 7px;
+    width: 250px;
+    margin-left: 0;
   }
 }
 
@@ -654,7 +626,6 @@ hr {
 @media screen and (max-width: 768px) {
   .company-cards span {
     font-size: 11px;
-    margin-bottom: 10px;
   }
 }
 .company-cards:hover {
@@ -663,9 +634,9 @@ hr {
 .company-cards:hover span {
   color: white;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
   .company-cards {
-    height: 10vh;
+    height: 15vh;
   }
 }
 @media screen and (max-width: 768px) {
@@ -679,6 +650,7 @@ hr {
     width: 30%;
     height: 12vh;
     margin-bottom: 40px;
+    border-radius: 10px;
   }
 }
 
@@ -951,9 +923,11 @@ button h1, .button-primary-outline h1 {
 }
 button:focus, .button-primary-outline:focus {
   outline: none;
+  background-color: white;
 }
 button:hover, .button-primary-outline:hover {
   border-color: #FE0F12;
+  background-color: white;
 }
 button:hover h1, .button-primary-outline:hover h1 {
   color: #FE0F12;
@@ -998,8 +972,8 @@ button:hover h1, .button-primary-outline:hover h1 {
 }
 @media screen and (max-width: 550px) {
   .payment-page-section2 {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -1149,6 +1123,7 @@ button:focus, .button-primary-outline-page3:focus {
 }
 button:hover, .button-primary-outline-page3:hover {
   border-color: #FE0F12;
+  background-color: white;
 }
 button:hover h1, .button-primary-outline-page3:hover h1 {
   color: #FE0F12;
@@ -1161,6 +1136,135 @@ button:hover h1, .button-primary-outline-page3:hover h1 {
 @media screen and (max-width: 800px) {
   button, .button-primary-outline-page3 {
     margin-top: 40px;
+  }
+}
+
+.column-page-4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-payment-container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 550px) {
+  .success-payment-container {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+.success-payment-container img {
+  width: 40%;
+  height: auto;
+}
+@media screen and (max-width: 550px) {
+  .success-payment-container img {
+    width: 30%;
+  }
+}
+
+.button-wrappers {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+@media screen and (max-width: 550px) {
+  .button-wrappers {
+    margin-top: 20px;
+  }
+}
+
+.title-success {
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #009F80;
+  opacity: 0.9;
+  margin-top: 30px;
+}
+@media screen and (max-width: 550px) {
+  .title-success {
+    font-size: 18px;
+  }
+}
+
+button, .btn-outline-secondary-page4 {
+  width: 200px;
+  height: 55px;
+  background-color: white;
+  border: 2px solid #009F80;
+  color: #009F80;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 0;
+  transition: 1s;
+  line-height: 18px;
+}
+button:focus, .btn-outline-secondary-page4:focus {
+  outline: none;
+  background-color: white;
+  color: #00CCA4;
+  opacity: 1;
+}
+button:hover, .btn-outline-secondary-page4:hover {
+  color: #00CCA4;
+  border: 2px solid #00CCA4;
+  background-color: white;
+}
+@media screen and (max-width: 550px) {
+  button, .btn-outline-secondary-page4 {
+    width: 160px;
+    height: 50px;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+}
+
+button, .btn-filled-secondary-page4 {
+  width: 200px;
+  height: 55px;
+  background-color: #009F80;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 0;
+  transition: 1s;
+  opacity: 1;
+}
+button:focus, .btn-filled-secondary-page4:focus {
+  outline: none;
+  background-color: #00CCA4;
+  color: white;
+  opacity: 1;
+}
+button:hover, .btn-filled-secondary-page4:hover {
+  background-color: #00CCA4;
+  color: white;
+}
+@media screen and (max-width: 550px) {
+  button, .btn-filled-secondary-page4 {
+    width: 160px;
+    height: 50px;
+    font-size: 15px;
+    margin-left: 10px;
   }
 }
 
