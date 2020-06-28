@@ -442,18 +442,6 @@ body {
   margin-bottom: 10px;
 }
 
-.container-column-page2 {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-}
-.container-column-page2 .input-title {
-  font-size: 18px;
-  color: #707070;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
 input {
   width: 80%;
   height: 55px;
@@ -749,6 +737,22 @@ hr {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 991px) {
+  .payment-page-section1 .column-page2 .row-page2 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .payment-page-section1 .column-page2 .row-page2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .payment-page-section1 .column-page2 .row-page2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .payment-page-section1 .column-page2 .row2-page2 {
   width: 80%;
   height: fit-content;
@@ -757,6 +761,22 @@ hr {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 991px) {
+  .payment-page-section1 .column-page2 .row2-page2 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .payment-page-section1 .column-page2 .row2-page2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .payment-page-section1 .column-page2 .row2-page2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .payment-page-section1 .column-page2 .row3-page2 {
   width: 80%;
   height: fit-content;
@@ -764,6 +784,22 @@ hr {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (max-width: 991px) {
+  .payment-page-section1 .column-page2 .row3-page2 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .payment-page-section1 .column-page2 .row3-page2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .payment-page-section1 .column-page2 .row3-page2 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .payment-page-section1 .column-page2 .outline-input-box {
   width: 80%;
@@ -774,11 +810,51 @@ hr {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  text-align: center;
 }
 .payment-page-section1 .column-page2 .outline-input-box span {
   font-size: 18px;
   font-weight: 600;
   color: #009F80;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .payment-page-section1 .column-page2 .outline-input-box span {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .payment-page-section1 .column-page2 .outline-input-box {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .payment-page-section1 .column-page2 .outline-input-box {
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+.container-column-page2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.container-column-page2 .input-title {
+  font-size: 18px;
+  color: #707070;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .container-column-page2 {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .container-column-page2 {
+    width: 100%;
+  }
 }
 
 .account-page2 {
@@ -805,6 +881,11 @@ hr {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 10px;
+}
+@media screen and (max-width: 550px) {
+  .account-page2 h1 {
+    margin-left: 5px;
+  }
 }
 
 .primary-filled-input {
@@ -848,6 +929,22 @@ button h1, .button-primary-outline h1 {
 }
 button:focus, .button-primary-outline:focus {
   outline: none;
+}
+button:hover, .button-primary-outline:hover {
+  border-color: #FE0F12;
+}
+button:hover h1, .button-primary-outline:hover h1 {
+  color: #FE0F12;
+}
+@media screen and (max-width: 768px) {
+  button, .button-primary-outline {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  button, .button-primary-outline {
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
