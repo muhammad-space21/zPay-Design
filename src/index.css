@@ -1,7 +1,7 @@
 .header {
   width: 100vw;
   height: 65vh;
-  background-image: url("../assets/images/zpay-header-2.jpg");
+  background-image: url("../assets/images/zpay-header-main.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -125,24 +125,6 @@
     display: none;
   }
 }
-.homepage-section-one .row .image-wrapper .letters {
-  display: flex;
-  flex-direction: column;
-  justify-self: flex-start;
-}
-.homepage-section-one .row .image-wrapper .letters span {
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #009F80;
-  margin-left: 20px;
-  margin-bottom: 3px;
-}
-@media screen and (max-width: 768px) {
-  .homepage-section-one .row .image-wrapper .letters span {
-    font-size: 14px;
-  }
-}
 .homepage-section-one .row .image-wrapper img {
   width: 55%;
   height: auto;
@@ -216,7 +198,7 @@
 
 .account-balance {
   width: 23%;
-  height: 80%;
+  height: 85%;
   background: #FF8008;
   background: -webkit-linear-gradient(to right, #FFC837, #FF8008);
   background: linear-gradient(to right, #FFC837, #FF8008);
@@ -229,6 +211,8 @@
   margin-bottom: 30px;
   margin-left: 10px;
   margin-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 @media screen and (max-width: 991px) {
   .account-balance {
@@ -243,6 +227,7 @@
 @media screen and (max-width: 550px) {
   .account-balance {
     width: 60%;
+    height: 100%;
   }
 }
 .account-balance img {
@@ -270,40 +255,57 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  padding-bottom: 5px;
   align-items: center;
   justify-content: space-evenly;
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: -20px;
+}
+.account-balance .account-balance-row span {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-right: auto;
+}
+.account-balance .account-balance-row2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: -10px;
+}
+.account-balance .account-balance-row2 span {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-right: auto;
+}
+@media screen and (max-width: 550px) {
+  .account-balance .account-balance-row2 span {
+    font-size: 12px;
+  }
 }
 .account-balance .illustration-container {
-  width: 40%;
-  height: auto;
+  width: 50%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-right: -20px;
 }
 .account-balance .illustration-container img {
   width: 100%;
   height: auto;
 }
-.account-balance .balance-date {
-  font-size: 15px;
-  font-weight: 400;
-  color: white;
-  justify-self: flex-end;
-}
-@media screen and (max-width: 550px) {
-  .account-balance .balance-date {
-    font-size: 12px;
-  }
-}
 
 .account-bonus {
   width: 23%;
-  height: 80%;
+  height: 85%;
   background: #FF512F;
   background: -webkit-linear-gradient(to right, #DD2476, #FF512F);
   background: linear-gradient(to right, #DD2476, #FF512F);
@@ -330,6 +332,7 @@
 @media screen and (max-width: 550px) {
   .account-bonus {
     width: 60%;
+    height: 100%;
   }
 }
 .account-bonus img {
@@ -353,39 +356,62 @@
     margin-left: 5px;
   }
 }
-.account-bonus .account-balance-row {
+.account-bonus .account-bonus-row {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding-bottom: 5px;
   align-items: center;
   justify-content: space-evenly;
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: -20px;
 }
-.account-bonus .illustration-container {
-  width: 40%;
-  height: fit-content;
+.account-bonus .account-bonus-row span {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-right: auto;
+}
+@media screen and (max-width: 550px) {
+  .account-bonus .account-bonus-row span {
+    margin-top: 5px;
+  }
+}
+.account-bonus .account-bonus-row2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: -10px;
+}
+.account-bonus .account-bonus-row2 span {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-right: auto;
+}
+@media screen and (max-width: 550px) {
+  .account-bonus .account-bonus-row2 span {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+.account-bonus .illustration-container2 {
+  width: 50%;
+  height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-right: -20px;
 }
-.account-bonus .illustration-container img {
+.account-bonus .illustration-container2 img {
   width: 100%;
   height: auto;
-}
-.account-bonus .balance-date {
-  font-size: 15px;
-  font-weight: 400;
-  color: white;
-  justify-self: flex-end;
-}
-@media screen and (max-width: 550px) {
-  .account-bonus .balance-date {
-    font-size: 12px;
-  }
 }
 
 .payment-page-section1 {
@@ -585,7 +611,7 @@
 
 .account-balance-page2 {
   width: 40%;
-  height: 40%;
+  height: 50%;
   background: #FF8008;
   background: -webkit-linear-gradient(to right, #FFC837, #FF8008);
   background: linear-gradient(to right, #FFC837, #FF8008);
@@ -597,25 +623,23 @@
   justify-content: center;
   margin-bottom: 30px;
   margin-right: 10px;
-}
-@media screen and (max-width: 768px) {
-  .account-balance-page2 {
-    width: 45%;
-  }
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 @media screen and (max-width: 550px) {
   .account-balance-page2 {
     width: 100%;
+    height: 100%;
   }
 }
 .account-balance-page2 img {
   width: 30px;
   height: 30px;
-  margin-right: 10px;
+  margin-right: 15px;
   justify-self: flex-start;
 }
 .account-balance-page2 h1 {
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   font-weight: 500;
   margin-top: auto;
@@ -623,7 +647,7 @@
   justify-self: center;
   margin-right: auto;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 550px) {
   .account-balance-page2 h1 {
     font-size: 12px;
     margin-left: 5px;
@@ -633,35 +657,52 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  padding-bottom: 5px;
   align-items: center;
   justify-content: space-evenly;
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: -20px;
+}
+.account-balance-page2 .account-balance-row span {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-right: auto;
+}
+.account-balance-page2 .account-balance-row2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: -10px;
+}
+.account-balance-page2 .account-balance-row2 span {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-right: auto;
+}
+@media screen and (max-width: 550px) {
+  .account-balance-page2 .account-balance-row2 span {
+    font-size: 12px;
+  }
 }
 .account-balance-page2 .illustration-container {
-  width: 25%;
-  height: auto;
+  width: 50%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
+  margin-right: -20px;
 }
 .account-balance-page2 .illustration-container img {
   width: 100%;
   height: auto;
-}
-.account-balance-page2 .balance-date {
-  font-size: 15px;
-  font-weight: 400;
-  color: white;
-  justify-self: flex-end;
-}
-@media screen and (max-width: 991px) {
-  .account-balance-page2 .balance-date {
-    font-size: 12px;
-  }
 }
 
 .payment-page-section2 {
@@ -749,7 +790,7 @@
   }
 }
 .column-page3 .col-container-page3 .card-company-container {
-  width: 65%;
+  width: 63%;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -764,13 +805,13 @@
   margin-bottom: 20px;
 }
 .column-page3 .col-container-page3 .card-company-container img {
-  width: 35%;
+  width: 25%;
   height: auto;
   margin-top: 20px;
 }
 .column-page3 .col-container-page3 .card-company-container span {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0px;
   color: #009F80;
@@ -872,6 +913,25 @@
   justify-content: space-evenly;
   padding-left: 15px;
   padding-right: 15px;
+}
+.account-balance-page3 .account-balance-row2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: auto;
+}
+.account-balance-page3 .account-balance-row2 span {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-right: auto;
 }
 .account-balance-page3 .illustration-container {
   width: 40%;
