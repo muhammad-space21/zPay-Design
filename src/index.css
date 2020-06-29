@@ -1,32 +1,13 @@
-body {
-  overflow-x: hidden;
-}
-
 .header {
   width: 100vw;
   height: 65vh;
-  background-image: url("../assets/images/banking-img.jpg");
+  background-image: url("../assets/images/zpay-header-2.jpg");
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 1300px) {
-  .header {
-    height: 40vh;
-  }
-}
-@media screen and (max-width: 991px) {
-  .header {
-    height: 40vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header {
-    height: 30vh;
-  }
-}
 @media screen and (max-width: 550px) {
   .header {
-    height: 50vh;
+    height: 70vh;
   }
 }
 .header .transparent {
@@ -59,187 +40,19 @@ body {
   }
 }
 .header .header-content {
-  width: fit-content;
+  width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 30px;
 }
 @media screen and (max-width: 550px) {
   .header .header-content {
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-}
-.header .account-container {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-}
-.header .account-container span {
-  text-align: center;
-  font-size: 22px;
-  letter-spacing: 0px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: #FFFFFF;
-  opacity: 1;
-}
-@media screen and (max-width: 991px) {
-  .header .account-container span {
-    font-size: 20px;
-    margin-bottom: 12px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header .account-container span {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-}
-.header .account-container .account {
-  width: 300px;
-  height: 70px;
-  background: #F5C02C 0% 0% no-repeat padding-box;
-  border-radius: 10px;
-  opacity: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-right: 20px;
-}
-.header .account-container .account h1 {
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 0px;
-  color: #FFFFFF;
-  opacity: 1;
-}
-@media screen and (max-width: 991px) {
-  .header .account-container .account h1 {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header .account-container .account h1 {
-    font-size: 17px;
-  }
-}
-.header .account-container .account img {
-  width: 40px;
-  height: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-@media screen and (max-width: 991px) {
-  .header .account-container .account img {
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
-    margin-left: 15px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header .account-container .account img {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-    margin-left: 15px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .header .account-container .account {
-    width: 250px;
-    height: 60px;
-    border-radius: 8px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header .account-container .account {
-    width: 200px;
-    height: 55px;
-    border-radius: 7px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .header .account-container .account {
-    width: 250px;
-    margin-right: 0;
-  }
-}
-.header .account-container .account2 {
-  width: 300px;
-  height: 70px;
-  background: #FF6466 0% 0% no-repeat padding-box;
-  border-radius: 10px;
-  opacity: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 20px;
-}
-.header .account-container .account2 h1 {
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 0px;
-  color: #FFFFFF;
-  opacity: 1;
-}
-@media screen and (max-width: 991px) {
-  .header .account-container .account2 h1 {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header .account-container .account2 h1 {
-    font-size: 17px;
-  }
-}
-.header .account-container .account2 img {
-  width: 40px;
-  height: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-@media screen and (max-width: 991px) {
-  .header .account-container .account2 img {
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
-    margin-left: 15px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header .account-container .account2 img {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-    margin-left: 15px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .header .account-container .account2 {
-    width: 250px;
-    height: 60px;
-    border-radius: 8px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header .account-container .account2 {
-    width: 200px;
-    height: 55px;
-    border-radius: 7px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .header .account-container .account2 {
-    width: 250px;
-    margin-left: 0;
   }
 }
 
@@ -331,14 +144,14 @@ body {
   }
 }
 .homepage-section-one .row .image-wrapper img {
-  width: 35%;
+  width: 55%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (max-width: 768px) {
   .homepage-section-one .row .image-wrapper img {
-    width: 50%;
+    width: 65%;
   }
 }
 .homepage-section-one .row form {
@@ -374,7 +187,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
 }
 .homepage-section-one .row form .input-container select {
   width: 20%;
@@ -400,6 +212,851 @@ body {
 .homepage-section-one .row form .input-container select::placeholder {
   color: #009F80;
   text-indent: 20px;
+}
+
+.account-balance {
+  width: 23%;
+  height: 80%;
+  background: #FF8008;
+  background: -webkit-linear-gradient(to right, #FFC837, #FF8008);
+  background: linear-gradient(to right, #FFC837, #FF8008);
+  border-radius: 10px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 991px) {
+  .account-balance {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .account-balance {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .account-balance {
+    width: 60%;
+  }
+}
+.account-balance img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  justify-self: flex-start;
+}
+.account-balance h1 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-self: center;
+  margin-right: auto;
+}
+@media screen and (max-width: 550px) {
+  .account-balance h1 {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+}
+.account-balance .account-balance-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.account-balance .illustration-container {
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.account-balance .illustration-container img {
+  width: 100%;
+  height: auto;
+}
+.account-balance .balance-date {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  justify-self: flex-end;
+}
+@media screen and (max-width: 550px) {
+  .account-balance .balance-date {
+    font-size: 12px;
+  }
+}
+
+.account-bonus {
+  width: 23%;
+  height: 80%;
+  background: #FF512F;
+  background: -webkit-linear-gradient(to right, #DD2476, #FF512F);
+  background: linear-gradient(to right, #DD2476, #FF512F);
+  border-radius: 10px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 991px) {
+  .account-bonus {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .account-bonus {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .account-bonus {
+    width: 60%;
+  }
+}
+.account-bonus img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  justify-self: flex-start;
+}
+.account-bonus h1 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-self: center;
+  margin-right: auto;
+}
+@media screen and (max-width: 550px) {
+  .account-bonus h1 {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+}
+.account-bonus .account-balance-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.account-bonus .illustration-container {
+  width: 40%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.account-bonus .illustration-container img {
+  width: 100%;
+  height: auto;
+}
+.account-bonus .balance-date {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  justify-self: flex-end;
+}
+@media screen and (max-width: 550px) {
+  .account-bonus .balance-date {
+    font-size: 12px;
+  }
+}
+
+.payment-page-section1 {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 0;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1500px) {
+  .payment-page-section1 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .payment-page-section1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .payment-page-section1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.payment-page-section1 .column-page2 {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+@media screen and (min-width: 1500px) {
+  .payment-page-section1 .column-page2 {
+    width: 70%;
+  }
+}
+.payment-page-section1 .column-page2 .row-page2 {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media screen and (max-width: 991px) {
+  .payment-page-section1 .column-page2 .row-page2 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .payment-page-section1 .column-page2 .row-page2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .payment-page-section1 .column-page2 .row-page2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.payment-page-section1 .column-page2 .row2-page2 {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 991px) {
+  .payment-page-section1 .column-page2 .row2-page2 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .payment-page-section1 .column-page2 .row2-page2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .payment-page-section1 .column-page2 .row2-page2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.payment-page-section1 .column-page2 .row3-page2 {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 991px) {
+  .payment-page-section1 .column-page2 .row3-page2 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .payment-page-section1 .column-page2 .row3-page2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .payment-page-section1 .column-page2 .row3-page2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.payment-page-section1 .column-page2 .outline-input-box {
+  width: 80%;
+  height: 60px;
+  border: 2px solid #009F80;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+}
+.payment-page-section1 .column-page2 .outline-input-box span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #009F80;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .payment-page-section1 .column-page2 .outline-input-box span {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .payment-page-section1 .column-page2 .outline-input-box {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .payment-page-section1 .column-page2 .outline-input-box {
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+.container-column-page2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.container-column-page2 .input-title {
+  font-size: 18px;
+  color: #707070;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .container-column-page2 {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .container-column-page2 {
+    width: 100%;
+  }
+}
+
+.primary-filled-input {
+  background: #00CCA4 0% 0% no-repeat padding-box;
+  opacity: 1;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.primary-filled-input h1 {
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+}
+
+.account-balance-page2 {
+  width: 40%;
+  height: 40%;
+  background: #FF8008;
+  background: -webkit-linear-gradient(to right, #FFC837, #FF8008);
+  background: linear-gradient(to right, #FFC837, #FF8008);
+  border-radius: 10px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .account-balance-page2 {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .account-balance-page2 {
+    width: 100%;
+  }
+}
+.account-balance-page2 img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  justify-self: flex-start;
+}
+.account-balance-page2 h1 {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-self: center;
+  margin-right: auto;
+}
+@media screen and (max-width: 1100px) {
+  .account-balance-page2 h1 {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+}
+.account-balance-page2 .account-balance-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.account-balance-page2 .illustration-container {
+  width: 25%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.account-balance-page2 .illustration-container img {
+  width: 100%;
+  height: auto;
+}
+.account-balance-page2 .balance-date {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  justify-self: flex-end;
+}
+@media screen and (max-width: 991px) {
+  .account-balance-page2 .balance-date {
+    font-size: 12px;
+  }
+}
+
+.payment-page-section2 {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 0;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1500px) {
+  .payment-page-section2 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .payment-page-section2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .payment-page-section2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.column-page3 {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+@media screen and (min-width: 1500px) {
+  .column-page3 {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .column-page3 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .column-page3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.column-page3 .col-container-page3 {
+  width: 45%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .column-page3 .col-container-page3 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .column-page3 .col-container-page3 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .column-page3 .col-container-page3 {
+    width: 100%;
+  }
+}
+.column-page3 .col-container-page3 .card-company-container {
+  width: 65%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 9px #00000029;
+  border: 1px solid #009F80;
+  opacity: 0.75;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.column-page3 .col-container-page3 .card-company-container img {
+  width: 35%;
+  height: auto;
+  margin-top: 20px;
+}
+.column-page3 .col-container-page3 .card-company-container span {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #009F80;
+  opacity: 1;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.column-page3 .row-page3 {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .column-page3 .row-page3 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .column-page3 .row-page3 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .column-page3 .row-page3 {
+    width: 100%;
+  }
+}
+
+.container-column-page3 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.container-column-page3 .input-title {
+  font-size: 18px;
+  color: #707070;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 550px) {
+  .container-column-page3 {
+    width: 90%;
+  }
+}
+
+.account-balance-page3 {
+  width: 63%;
+  height: 80%;
+  background: #FF8008;
+  background: -webkit-linear-gradient(to right, #FFC837, #FF8008);
+  background: linear-gradient(to right, #FFC837, #FF8008);
+  border-radius: 10px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 991px) {
+  .account-balance-page3 {
+    width: 70%;
+  }
+}
+.account-balance-page3 img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  justify-self: flex-start;
+}
+.account-balance-page3 h1 {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-self: center;
+  margin-right: auto;
+}
+@media screen and (max-width: 1100px) {
+  .account-balance-page3 h1 {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+}
+.account-balance-page3 .account-balance-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.account-balance-page3 .illustration-container {
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.account-balance-page3 .illustration-container img {
+  width: 100%;
+  height: auto;
+}
+.account-balance-page3 .balance-date {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  justify-self: flex-end;
+}
+@media screen and (max-width: 991px) {
+  .account-balance-page3 .balance-date {
+    font-size: 12px;
+  }
+}
+
+button, .button-primary-outline-page3 {
+  opacity: 1;
+  width: 80%;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: white;
+  border: 2px solid #FF685D;
+}
+button h1, .button-primary-outline-page3 h1 {
+  font-size: 18px;
+  color: #FF685D;
+  font-weight: 700;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+button:focus, .button-primary-outline-page3:focus {
+  outline: none;
+}
+button:hover, .button-primary-outline-page3:hover {
+  border-color: #FE0F12;
+  background-color: white;
+}
+button:hover h1, .button-primary-outline-page3:hover h1 {
+  color: #FE0F12;
+}
+
+.column-page-4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-payment-container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 550px) {
+  .success-payment-container {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+.success-payment-container img {
+  width: 40%;
+  height: auto;
+}
+@media screen and (max-width: 550px) {
+  .success-payment-container img {
+    width: 30%;
+  }
+}
+
+.button-wrappers {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+@media screen and (max-width: 550px) {
+  .button-wrappers {
+    margin-top: 20px;
+  }
+}
+
+.title-success {
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #009F80;
+  opacity: 0.9;
+  margin-top: 30px;
+}
+@media screen and (max-width: 550px) {
+  .title-success {
+    font-size: 18px;
+  }
+}
+
+button, .btn-outline-secondary-page4 {
+  width: 200px;
+  height: 55px;
+  background-color: white;
+  border: 2px solid #009F80;
+  color: #009F80;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 0;
+  transition: 1s;
+  line-height: 18px;
+}
+button:focus, .btn-outline-secondary-page4:focus {
+  outline: none;
+  background-color: white;
+  color: #00CCA4;
+  opacity: 1;
+}
+button:hover, .btn-outline-secondary-page4:hover {
+  color: #00CCA4;
+  border: 2px solid #00CCA4;
+  background-color: white;
+}
+@media screen and (max-width: 550px) {
+  button, .btn-outline-secondary-page4 {
+    width: 160px;
+    height: 50px;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+}
+
+button, .btn-filled-secondary-page4 {
+  width: 200px;
+  height: 55px;
+  background-color: #009F80;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 0;
+  transition: 1s;
+  opacity: 1;
+}
+button:focus, .btn-filled-secondary-page4:focus {
+  outline: none;
+  background-color: #00CCA4;
+  color: white;
+  opacity: 1;
+}
+button:hover, .btn-filled-secondary-page4:hover {
+  background-color: #00CCA4;
+  color: white;
+}
+@media screen and (max-width: 550px) {
+  button, .btn-filled-secondary-page4 {
+    width: 160px;
+    height: 50px;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .container-column {
@@ -484,6 +1141,7 @@ hr {
 .btn-primary-filled:hover {
   outline: none;
   background-color: #00CCA4;
+  border: none;
 }
 .btn-primary-filled:focus {
   outline: none;
@@ -654,232 +1312,6 @@ hr {
   }
 }
 
-.payment-page-section1 {
-  width: 100vw;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  padding-left: 100px;
-  padding-right: 100px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 0;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (min-width: 1500px) {
-  .payment-page-section1 {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .payment-page-section1 {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .payment-page-section1 {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-.payment-page-section1 .column-page2 {
-  width: 90%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-}
-@media screen and (min-width: 1500px) {
-  .payment-page-section1 .column-page2 {
-    width: 70%;
-  }
-}
-.payment-page-section1 .column-page2 .row-page2 {
-  width: 80%;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-@media screen and (max-width: 991px) {
-  .payment-page-section1 .column-page2 .row-page2 {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 700px) {
-  .payment-page-section1 .column-page2 .row-page2 {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 550px) {
-  .payment-page-section1 .column-page2 .row-page2 {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.payment-page-section1 .column-page2 .row2-page2 {
-  width: 80%;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-@media screen and (max-width: 991px) {
-  .payment-page-section1 .column-page2 .row2-page2 {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 700px) {
-  .payment-page-section1 .column-page2 .row2-page2 {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 550px) {
-  .payment-page-section1 .column-page2 .row2-page2 {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.payment-page-section1 .column-page2 .row3-page2 {
-  width: 80%;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-@media screen and (max-width: 991px) {
-  .payment-page-section1 .column-page2 .row3-page2 {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 700px) {
-  .payment-page-section1 .column-page2 .row3-page2 {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 550px) {
-  .payment-page-section1 .column-page2 .row3-page2 {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.payment-page-section1 .column-page2 .outline-input-box {
-  width: 80%;
-  height: 60px;
-  border: 2px solid #009F80;
-  border-radius: 7px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  text-align: center;
-}
-.payment-page-section1 .column-page2 .outline-input-box span {
-  font-size: 18px;
-  font-weight: 600;
-  color: #009F80;
-  padding: 10px;
-}
-@media screen and (max-width: 768px) {
-  .payment-page-section1 .column-page2 .outline-input-box span {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .payment-page-section1 .column-page2 .outline-input-box {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 550px) {
-  .payment-page-section1 .column-page2 .outline-input-box {
-    width: 100%;
-    height: fit-content;
-  }
-}
-
-.container-column-page2 {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-}
-.container-column-page2 .input-title {
-  font-size: 18px;
-  color: #707070;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-@media screen and (max-width: 768px) {
-  .container-column-page2 {
-    width: 45%;
-  }
-}
-@media screen and (max-width: 550px) {
-  .container-column-page2 {
-    width: 100%;
-  }
-}
-
-.account-page2 {
-  width: 100%;
-  height: 55px;
-  background: #F5C02C 0% 0% no-repeat padding-box;
-  border-radius: 5px;
-  opacity: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 30px;
-}
-.account-page2 img {
-  width: 30px;
-  height: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.account-page2 h1 {
-  font-size: 18px;
-  color: white;
-  font-weight: 700;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 10px;
-}
-@media screen and (max-width: 550px) {
-  .account-page2 h1 {
-    margin-left: 5px;
-  }
-}
-
-.primary-filled-input {
-  background: #00CCA4 0% 0% no-repeat padding-box;
-  opacity: 1;
-  width: 100%;
-  height: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  margin-bottom: 30px;
-}
-.primary-filled-input h1 {
-  font-size: 18px;
-  color: white;
-  font-weight: 700;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 10px;
-}
-
 .primary-outline-input {
   border: 2px solid #009F80;
   opacity: 1;
@@ -940,331 +1372,6 @@ button:hover h1, .button-primary-outline:hover h1 {
 @media screen and (max-width: 550px) {
   button, .button-primary-outline {
     width: 80%;
-  }
-}
-
-.payment-page-section2 {
-  width: 100vw;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  padding-left: 100px;
-  padding-right: 100px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 0;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (min-width: 1500px) {
-  .payment-page-section2 {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .payment-page-section2 {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .payment-page-section2 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-.column-page3 {
-  width: 90%;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-@media screen and (min-width: 1500px) {
-  .column-page3 {
-    width: 70%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .column-page3 {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 700px) {
-  .column-page3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
-.column-page3 .col-container-page3 {
-  width: 45%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 768px) {
-  .column-page3 .col-container-page3 {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 700px) {
-  .column-page3 .col-container-page3 {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 550px) {
-  .column-page3 .col-container-page3 {
-    width: 100%;
-  }
-}
-.column-page3 .col-container-page3 .card-company-container {
-  width: 80%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  box-shadow: 0px 6px 9px #00000029;
-  border: 1px solid #009F80;
-  opacity: 0.75;
-  cursor: pointer;
-  border-radius: 15px;
-  margin-bottom: 20px;
-}
-.column-page3 .col-container-page3 .card-company-container img {
-  width: 45%;
-  height: auto;
-  margin-top: 25px;
-}
-.column-page3 .col-container-page3 .card-company-container span {
-  text-align: center;
-  font-size: 25px;
-  font-weight: 700;
-  letter-spacing: 0px;
-  color: #009F80;
-  opacity: 1;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  margin-top: 25px;
-}
-.column-page3 .row-page3 {
-  width: 45%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-@media screen and (max-width: 768px) {
-  .column-page3 .row-page3 {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 700px) {
-  .column-page3 .row-page3 {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 550px) {
-  .column-page3 .row-page3 {
-    width: 100%;
-  }
-}
-
-.container-column-page3 {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-}
-.container-column-page3 .input-title {
-  font-size: 18px;
-  color: #707070;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-@media screen and (max-width: 550px) {
-  .container-column-page3 {
-    width: 90%;
-  }
-}
-
-button, .button-primary-outline-page3 {
-  opacity: 1;
-  width: 80%;
-  height: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  background-color: white;
-  border: 2px solid #FF685D;
-  margin-top: 75px;
-}
-button h1, .button-primary-outline-page3 h1 {
-  font-size: 18px;
-  color: #FF685D;
-  font-weight: 700;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-button:focus, .button-primary-outline-page3:focus {
-  outline: none;
-}
-button:hover, .button-primary-outline-page3:hover {
-  border-color: #FE0F12;
-  background-color: white;
-}
-button:hover h1, .button-primary-outline-page3:hover h1 {
-  color: #FE0F12;
-}
-@media screen and (max-width: 991px) {
-  button, .button-primary-outline-page3 {
-    margin-top: 50px;
-  }
-}
-@media screen and (max-width: 800px) {
-  button, .button-primary-outline-page3 {
-    margin-top: 40px;
-  }
-}
-
-.column-page-4 {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.success-payment-container {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 70px;
-  margin-bottom: 50px;
-}
-@media screen and (max-width: 550px) {
-  .success-payment-container {
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
-}
-.success-payment-container img {
-  width: 40%;
-  height: auto;
-}
-@media screen and (max-width: 550px) {
-  .success-payment-container img {
-    width: 30%;
-  }
-}
-
-.button-wrappers {
-  display: flex;
-  flex-direction: row;
-  margin-top: 30px;
-}
-@media screen and (max-width: 550px) {
-  .button-wrappers {
-    margin-top: 20px;
-  }
-}
-
-.title-success {
-  width: fit-content;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 0px;
-  color: #009F80;
-  opacity: 0.9;
-  margin-top: 30px;
-}
-@media screen and (max-width: 550px) {
-  .title-success {
-    font-size: 18px;
-  }
-}
-
-button, .btn-outline-secondary-page4 {
-  width: 200px;
-  height: 55px;
-  background-color: white;
-  border: 2px solid #009F80;
-  color: #009F80;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  cursor: pointer;
-  margin-right: 20px;
-  margin-top: 0;
-  transition: 1s;
-  line-height: 18px;
-}
-button:focus, .btn-outline-secondary-page4:focus {
-  outline: none;
-  background-color: white;
-  color: #00CCA4;
-  opacity: 1;
-}
-button:hover, .btn-outline-secondary-page4:hover {
-  color: #00CCA4;
-  border: 2px solid #00CCA4;
-  background-color: white;
-}
-@media screen and (max-width: 550px) {
-  button, .btn-outline-secondary-page4 {
-    width: 160px;
-    height: 50px;
-    font-size: 15px;
-    margin-right: 10px;
-  }
-}
-
-button, .btn-filled-secondary-page4 {
-  width: 200px;
-  height: 55px;
-  background-color: #009F80;
-  border: none;
-  color: white;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  cursor: pointer;
-  margin-left: 20px;
-  margin-top: 0;
-  transition: 1s;
-  opacity: 1;
-}
-button:focus, .btn-filled-secondary-page4:focus {
-  outline: none;
-  background-color: #00CCA4;
-  color: white;
-  opacity: 1;
-}
-button:hover, .btn-filled-secondary-page4:hover {
-  background-color: #00CCA4;
-  color: white;
-}
-@media screen and (max-width: 550px) {
-  button, .btn-filled-secondary-page4 {
-    width: 160px;
-    height: 50px;
-    font-size: 15px;
-    margin-left: 10px;
   }
 }
 

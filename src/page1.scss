@@ -1,0 +1,347 @@
+// HEADER 
+.header {
+  width: 100vw;
+  height: 65vh;
+  background-image: url('../assets/images/zpay-header-2.jpg');
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width: 550px) {
+    height: 70vh;
+  }
+  .transparent {
+    width: 100%;
+    height: 100%;
+    background-color: #009f7f8c;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading-title {
+    text-align: center;
+    font-size: 62px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    @media screen and (max-width: 991px) {
+      font-size: 42px;
+      font-weight: 500;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+    }
+  }
+  .header-content {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-top: 30px;
+    @media screen and (max-width: 550px) {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+// HOMEPAGE SECTION1
+.homepage-section-one {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 0;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 1500px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  @media screen and (max-width: 1100px) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media screen and (max-width: 550px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    // border: 2px solid blue;
+    @media screen and (min-width: 1500px) {
+      width: 70%;
+    }
+    .image-wrapper {
+      width: 50%;
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      // border: 2px solid green;
+      @media screen and (max-width: 1100px) {
+        width: 45%;
+      }
+      @media screen and (max-width: 991px) {
+        width: 40%;
+      }
+      @media screen and (max-width: 550px) {
+        display: none;
+      }
+      // border: 2px solid red;
+      .letters {
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-start;
+        span {
+          font-size: 16px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #009F80;
+          margin-left: 20px;
+          margin-bottom: 3px;
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+      }
+      img {
+        width: 55%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (max-width: 768px) {
+          width: 65%;
+        }
+      }
+    }
+    form {
+      width: 40%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      // border: 2px solid red;
+      @media screen and (min-width: 1500px) {
+        width: 25vw;
+      }
+      @media screen and (max-width: 1100px) {
+        width: 45%;
+      }
+      @media screen and (max-width: 991px) {
+        width: 50%;
+      }
+      @media screen and (max-width: 550px) {
+        width: 100%;
+      }
+      .input-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        // border: 3px solid black;
+        select {
+          width: 20%;
+          height: 55px;
+          border: 2px solid #009F80;
+          border-radius: 5px;
+          margin-right: 15px;
+          transition: 1s;
+          text-indent: 10px;
+          color: #009F80;
+          padding-right: 5px;
+          &:hover {
+            border-color: #00CCA4;
+          }
+          &:focus {
+            outline: none;
+          }
+          option {
+            color: #009F80;
+            text-indent: 20px;
+          }
+          &::placeholder {
+            color: #009F80;
+            text-indent: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////
+// CARDS 
+// BALANCE 
+.account-balance {
+  width: 23%;
+  height: 80%;
+  background: #FF8008;
+  background: -webkit-linear-gradient(to right, #FFC837, #FF8008);
+  background: linear-gradient(to right, #FFC837, #FF8008);
+  border-radius: 10px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  @media screen and (max-width: 991px) {
+    width: 35%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 60%;
+  }
+  @media screen and (max-width: 550px) {
+    width: 60%;
+  }
+  
+  img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    justify-self: flex-start;
+  }
+  h1 {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-self: center;
+    margin-right: auto;
+    @media screen and (max-width: 550px) {
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+  .account-balance-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .illustration-container {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .balance-date {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    justify-self: flex-end;
+    @media screen and (max-width: 550px) {
+      font-size: 12px;
+    }
+  }
+}
+
+// Account Bonus
+.account-bonus {
+  width: 23%;
+  height: 80%;
+  background: #FF512F;
+  background: -webkit-linear-gradient(to right, #DD2476, #FF512F);
+  background: linear-gradient(to right, #DD2476, #FF512F);
+  border-radius: 10px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  @media screen and (max-width: 991px) {
+    width: 35%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 60%;
+  }
+  @media screen and (max-width: 550px) {
+    width: 60%;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    justify-self: flex-start;
+  }
+  h1 {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-self: center;
+    margin-right: auto;
+    @media screen and (max-width: 550px) {
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+  .account-balance-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .illustration-container {
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .balance-date {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    justify-self: flex-end;
+    @media screen and (max-width: 550px) {
+      font-size: 12px;
+    }
+  }
+}

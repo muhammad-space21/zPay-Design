@@ -1,0 +1,121 @@
+// PAGE 4
+.column-page-4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-payment-container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  @media screen and (max-width: 550px) {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  // border: 2px solid red;
+    img {
+      width: 40%;
+      height: auto;
+      @media screen and (max-width: 550px) {
+        width: 30%;
+      }
+    }
+}
+
+.button-wrappers {
+  display: flex;
+  flex-direction: row;
+  // border: 2px solid red;
+  margin-top: 30px;
+  @media screen and (max-width: 550px) {
+    margin-top: 20px;
+  }
+}
+
+.title-success {
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #009F80;
+  opacity: 0.9;
+  // border: 2px solid red;
+  margin-top: 30px;
+  @media screen and (max-width: 550px) {
+   font-size: 18px;
+  }
+}
+
+ button, .btn-outline-secondary-page4 {
+  width: 200px;
+  height: 55px;
+  background-color: white;
+  border: 2px solid #009F80;
+  color: #009F80;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  cursor:pointer;
+  margin-right: 20px;
+  margin-top: 0;
+  transition: 1s;
+  line-height: 18px;
+  &:focus {
+    outline: none;
+    background-color: white;
+    color: #00CCA4;
+    opacity: 1;
+  }
+  &:hover {
+    color: #00CCA4;
+    border: 2px solid #00CCA4;
+    background-color: white;
+  }
+  @media screen and (max-width: 550px) {
+    width: 160px;
+    height: 50px;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+}
+
+button, .btn-filled-secondary-page4 {
+  width: 200px;
+  height: 55px;
+  background-color: #009F80;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  cursor:pointer;
+  margin-left: 20px;
+  margin-top: 0;
+  transition: 1s;
+  opacity: 1;
+  &:focus {
+    outline: none;
+    background-color: #00CCA4;
+    color: white;
+    opacity: 1;
+  }
+  &:hover {
+    background-color: #00CCA4;
+    color: white;
+  }
+  @media screen and (max-width: 550px) {
+    width: 160px;
+    height: 50px;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+}
