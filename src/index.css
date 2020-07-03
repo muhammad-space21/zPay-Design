@@ -1,14 +1,9 @@
 .header {
   width: 100vw;
   height: 65vh;
-  background-image: url("../assets/images/online-payments.jpg");
+  background-image: url("../assets/images/online-payments-woman.png");
   background-position: center;
   background-size: cover;
-}
-@media screen and (max-width: 991px) {
-  .header {
-    height: 40vh;
-  }
 }
 @media screen and (max-width: 1300px) {
   .header {
@@ -240,7 +235,13 @@ input {
 }
 @media screen and (max-width: 991px) {
   .card {
-    width: 35%;
+    width: 34%;
+    height: 16vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 37%;
     height: auto;
   }
 }
@@ -1247,6 +1248,7 @@ hr {
   color: white;
   cursor: pointer;
   transition: 1s;
+  margin-left: 0;
 }
 .btn-primary-filled:hover {
   outline: none;

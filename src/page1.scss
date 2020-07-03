@@ -2,12 +2,9 @@
 .header {
   width: 100vw;
   height: 65vh;
-  background-image: url('../assets/images/online-payments.jpg');
+  background-image: url('../assets/images/online-payments-woman.png');
   background-position: center;
   background-size: cover;
-  @media screen and (max-width: 991px) {
-    height: 40vh;
-  }
   @media screen and (max-width: 1300px) {
     height: 50vh;
   }
@@ -210,9 +207,13 @@ input {
 
   }
   @media screen and (max-width: 991px) {
-    width: 35%;
-    height: auto;
+    width: 34%;
+    height: 16vh;
 
+  }
+  @media screen and (max-width: 768px) {
+    width: 37%;
+    height: auto;
   }
   @media screen and (max-width: 550px) {
     width: 70%;
