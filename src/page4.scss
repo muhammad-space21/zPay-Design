@@ -55,7 +55,7 @@
   }
 }
 
- button, .btn-outline-secondary-page4 {
+.btn-outline-secondary-page4 {
   width: 200px;
   height: 55px;
   background-color: white;
@@ -74,6 +74,7 @@
     background-color: white;
     color: #00CCA4;
     opacity: 1;
+    border: 2px solid #00CCA4;
   }
   &:hover {
     color: #00CCA4;
@@ -107,10 +108,12 @@ button, .btn-filled-secondary-page4 {
     background-color: #00CCA4;
     color: white;
     opacity: 1;
+    border: none;
   }
   &:hover {
     background-color: #00CCA4;
     color: white;
+    border: none;
   }
   @media screen and (max-width: 550px) {
     width: 160px;

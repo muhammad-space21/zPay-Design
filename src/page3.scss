@@ -74,13 +74,17 @@
       align-items: center;
       background: #FFFFFF 0% 0% no-repeat padding-box;
       box-shadow: 0px 6px 9px #00000029;
-      border: 1px solid #009F80;
+      border: 2px solid #009F80;
       opacity: 0.75;
       cursor: pointer;
       border-radius: 15px;
       margin-bottom: 20px;
+      @media screen and (max-width: 550px) {
+        width: 90%;
+        order: 2;
+      }
       img {
-        width: 25%;
+        width: 20%;
         height: auto;
         margin-top: 20px;
       }
@@ -134,101 +138,9 @@
   }
 }
 
-.account-balance-page3 {
-  width: 63%;
-  height: 80%;
-  background: #FF8008;
-  background: -webkit-linear-gradient(to right, #FFC837, #FF8008);
-  background: linear-gradient(to right, #FFC837, #FF8008);
-  border-radius: 10px;
-  opacity: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
-  @media screen and (max-width: 991px) {
-    width: 70%;
-  }
-  
-  img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    justify-self: flex-start;
-  }
-  h1 {
-    font-size: 16px;
-    color: white;
-    font-weight: 500;
-    margin-top: auto;
-    margin-bottom: auto;
-    justify-self: center;
-    margin-right: auto;
-    @media screen and (max-width: 1100px) {
-      font-size: 12px;
-      margin-left: 5px;
-    }
-  }
-  .account-balance-row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .account-balance-row2 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-left: 15px;
-    padding-right: 15px;
-    // border: 2px solid red;
-    margin-bottom: auto;
-    span {
-      color: white;
-      font-weight: 500;
-      text-transform: uppercase;
-      font-size: 14px;
-      margin-right: auto;
-    }
-  }
-  .illustration-container {
-    width: 40%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-  .balance-date {
-    font-size: 15px;
-    font-weight: 400;
-    color: white;
-    justify-self: flex-end;
-    @media screen and (max-width: 991px) {
-      font-size: 12px;
-    }
-  }
-}
-
 
 // BUTTON OUTLINE 
-button, .button-primary-outline-page3 {
+.btn-page3 {
   opacity: 1;
   width: 80%;
   height: 55px;
@@ -238,7 +150,7 @@ button, .button-primary-outline-page3 {
   border-radius: 5px;
   background-color: white;
   border: 2px solid #FF685D;
-  // margin-top: 75px;
+  margin-top: 50px;
   h1 {
     font-size: 18px;
     color: #FF685D;
@@ -248,13 +160,69 @@ button, .button-primary-outline-page3 {
   }
   &:focus {
     outline: none;
+    border: 2px solid #FE0F12;
   }
   &:hover {
-    border-color: #FE0F12;
+    border: 2px solid #FE0F12;
     background-color: white;
     h1 {
       color: #FE0F12;
     }
   }
+  @media screen and (max-width: 550px) {
+    width: 90%;
+  }
 }
 
+//////////////////////////////////////////////////////////
+// CARD
+.card-page3 {
+  width: 63%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border: none;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 9px #00000029;
+  @media screen and (max-width: 550px) {
+    width: 90%;
+    order: 1;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .card-type-page3 {
+    font-size: 19px;
+    font-weight: 700;
+    color: black;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+    @media screen and (max-width: 1100px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 550px) {
+      font-size: 18px;
+    }
+  }
+  .amount-page3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    margin-left: 20px;
+    bottom: 0;
+    margin-top: -50px;
+    @media screen and (max-width: 1100px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 550px) {
+      font-size: 22px;
+    }
+  }
+};
