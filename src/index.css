@@ -1,32 +1,41 @@
 .header {
   width: 100vw;
   height: 65vh;
-  background-image: url("../assets/images/online-payments-woman.png");
+  background-image: url("../assets/images/zmarketCardsBg.png");
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1300px) {
+  .header {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 991px) {
   .header {
     height: 50vh;
   }
 }
-.header .transparent {
-  width: 100%;
-  height: 100%;
-  background-color: #009f7f8c;
-  margin-top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+@media screen and (max-width: 550px) {
+  .header {
+    height: 40vh;
+  }
 }
+
 .header .heading-title {
   text-align: center;
-  font-size: 62px;
-  font-weight: 500;
+  font-size: 55px;
+  font-weight: 400;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #00CCA4;
   opacity: 1;
+  font-style: italic;
+  margin-top: 20px;
 }
 @media screen and (max-width: 991px) {
   .header .heading-title {
@@ -40,7 +49,7 @@
   }
 }
 .header .header-content {
-  width: 90%;
+  width: 95%;
   height: fit-content;
   display: flex;
   flex-direction: row;
@@ -48,6 +57,8 @@
   justify-content: space-evenly;
   margin-top: 30px;
   flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 550px) {
   .header .header-content {
@@ -221,7 +232,7 @@ input {
 }
 
 .card {
-  width: 20vw;
+  width: 22vw;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -230,6 +241,8 @@ input {
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 30px;
+  background: transparent;
+  border: none;
 }
 @media screen and (max-width: 1200px) {
   .card {
@@ -266,12 +279,13 @@ input {
   height: 100%;
 }
 .card .card-type {
-  font-size: 19px;
-  font-weight: 700;
-  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
   position: absolute;
+  font-style: italic;
   margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 @media screen and (max-width: 1100px) {
   .card .card-type {
@@ -284,19 +298,25 @@ input {
   }
 }
 .card .amount {
-  font-size: 22px;
-  font-weight: 700;
-  color: black;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
   margin-left: 20px;
   position: absolute;
   bottom: 0;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+}
+.card .amount span {
+  font-size: 22px;
+  color: white;
+  font-weight: 700;
 }
 @media screen and (max-width: 1100px) {
   .card .amount {
     font-size: 18px;
   }
 }
+
 
 .card-mobile {
   width: 20vw;
@@ -344,12 +364,13 @@ input {
   height: 100%;
 }
 .card-mobile .card-type {
-  font-size: 19px;
-  font-weight: 700;
-  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
   position: absolute;
+  font-style: italic;
   margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 @media screen and (max-width: 1100px) {
   .card-mobile .card-type {
@@ -362,13 +383,17 @@ input {
   }
 }
 .card-mobile .amount {
-  font-size: 22px;
-  font-weight: 700;
-  color: black;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
   margin-left: 20px;
   position: absolute;
-  bottom: 0;
-  margin-bottom: 10px;
+  margin-top: 100px;
+}
+.card-mobile .amount span {
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
 }
 @media screen and (max-width: 1100px) {
   .card-mobile .amount {
@@ -585,12 +610,13 @@ input {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
+  border-radius: 13px;
   overflow: hidden;
   margin-bottom: 30px;
   border: none;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  box-shadow: 0px 6px 9px #00000029;
+  /* box-shadow: 0px 6px 9px #00000029; */
+  /* background: transparent; */
+  padding: 0;
 }
 @media screen and (max-width: 550px) {
   .card-page2 {
@@ -600,14 +626,20 @@ input {
 .card-page2 img {
   width: 100%;
   height: 100%;
+  margin-top: -10px;
+  border: none;
+  background-color: white;
+  border-radius: 13px;
 }
+
 .card-page2 .card-type-page2 {
   font-size: 19px;
-  font-weight: 700;
+  font-weight: 500;
   color: black;
   position: absolute;
   margin-left: 20px;
   margin-top: 10px;
+  font-style: italic;
 }
 @media screen and (max-width: 1100px) {
   .card-page2 .card-type-page2 {
@@ -621,11 +653,16 @@ input {
 }
 .card-page2 .amount-page2 {
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 400;
   color: black;
   margin-left: 20px;
-  bottom: 0;
-  margin-top: -50px;
+  position: absolute;
+  margin-top: 100px;
+  
+}
+.card-page2 .amount-page2 span {
+  font-size: 20px;
+  font-weight: 700;
 }
 @media screen and (max-width: 1100px) {
   .card-page2 .amount-page2 {
@@ -1685,4 +1722,270 @@ hr {
   }
 }
 
+
+/*new pop-up */
+.new-popup-container {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.new-popup-close-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #7E6D40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 550px) {
+  .new-popup-close-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-right: 20px;
+  }
+}
+
+.new-popup-close-icon img {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .new-popup-close-icon img {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.new-popup-company-cards-container {
+  width: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 550px) {
+  .new-popup-company-cards-container {
+    width: 120px;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .new-popup-company-cards-container {
+    margin-top: 60px;
+  }
+}
+
+.new-popup-company-cards-container img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.new-popup-company-cards-container span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #7E6D40;
+  margin-left: -5px;
+}
+
+
+@media screen and (max-width: 550px) {
+  .new-popup-company-cards-container span {
+    font-size: 16px;
+  }
+}
+
+.new-popup-user-balnce-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.new-popup-user-balnce-container span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.newpop-up-input-balance {
+  width: 100%;
+  height: 65px;
+  background-color: #fcbd118c;
+  border-bottom: 2.5px solid #0000007c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .newpop-up-input-balance {
+    height: 55px;
+  }
+}
+
+.newpop-up-input-balance span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0000007c;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.new-popup-form {
+  width: 35%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 991px) {
+  .new-popup-form {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .new-popup-form {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .new-popup-form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .new-popup-form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .new-popup-form {
+    width: 80%;
+  }
+}
+
+.new-popup-input-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.new-popup-input-container option {
+  color: #009F80;
+}
+
+.new-popup-input-container select {
+  color: #009f7fb9;
+  font-weight: 600;
+}
+.new-popup-input-container select:focus {
+  outline: none;
+}
+.new-popup-input-container span {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #009F80;
+}
+
+.new-popup-row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+.new-popup-mask {
+  width: 55px;
+  height: 50px;
+  font-size: 18px;
+  color: #009f7fb9;
+  border-bottom: 1px solid #009F80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .new-popup-mask {
+    height: 45px;
+  }
+}
+
+
+.new-popup-input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #009F80;
+  font-size: 16px;
+  border-radius: 0;
+}
+
+@media screen and (max-width: 550px) {
+  .new-popup-input {
+    height: 45px;
+  }
+}
+
+.new-popup-btn {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #009F80;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 550px) {
+  .new-popup-btn {
+    height: 50px;
+    font-size: 16px;
+    margin-top: 25px;
+  }
+}
 /*# sourceMappingURL=index.css.map */
